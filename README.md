@@ -47,3 +47,37 @@ a & b & c \\
 ```latex
 \[ <expression> \]
 ```
+
+## Plotting Graph
+```latex
+\usepackage{pgfplots}
+\pgfplotsset{width=\textwidth, compat=1.8}
+
+\begin{tikzpicture}
+  \begin{axis}[
+    title={<title of graph>},
+    xmin={0}, xmax={MAX_WIDTH},
+    ymin={0}, ymax={MAX_HEIGHT},
+    grid={both},
+    major grid style={lightgray},
+    minor grid style={lightgray},
+    height={\textwidth * 0.75},
+    legend cell align={left},
+    legend pos={north west},
+  ],
+  \addplot[
+    color={blue},
+    mark={square}
+  ]
+  coordinates {
+    (0.4, 10)
+    (3.2, 100)
+    (15, 1000)
+  };
+  \legend{
+    {dataset 1}
+  }
+  \end{axis}
+\end{tikzpicture}
+
+```
