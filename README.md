@@ -56,8 +56,8 @@ a & b & c \\
 \begin{tikzpicture}
   \begin{axis}[
     title={<title of graph>},
-    xmin={0}, xmax={MAX_WIDTH},
-    ymin={0}, ymax={MAX_HEIGHT},
+    xmin={0}, xmax={MAX_WIDTH}, xlabel={AXIS_X},
+    ymin={0}, ymax={MAX_HEIGHT}, ylabel={AXIS_Y},
     grid={both},
     major grid style={lightgray},
     minor grid style={lightgray},
