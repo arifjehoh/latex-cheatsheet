@@ -40,6 +40,7 @@ Column 1 & Column 2 & Colum 3 \\ \hline
 a & b & c \\
 1 & 2 & 3 
 \end{tabular}
+\caption{Some caption}
 \end{table}
 ```
 
